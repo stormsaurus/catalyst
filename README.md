@@ -14,3 +14,11 @@ An IRC bot sits in the channel and relays back to a network of game clients thro
 This two way communication would let you participate in chat from outside the game from protocols and devices like IRC, IM, email, SMS, even your cell phone.
 
 More details [here](http://james.io/#/projects) .
+
+## notes
+
+This project is dated and relies on some old libraries.
+
+* MySQL 5.0.51b
+* Java 6_06
+* Tomcat 6.0.16 
