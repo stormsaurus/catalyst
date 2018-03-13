@@ -17,7 +17,7 @@ More details [here](http://james.io/#/projects) .
 
 ## notes
 
-This project is dated and relies on some old libraries.
+This project was experimental and not particularly well written to quickly explore what was possible.  It is also dated and relies on some old libraries.
 
 * MySQL 5.0.51b
 * Java 6_06
@@ -27,6 +27,6 @@ This project is dated and relies on some old libraries.
 * jabsorb 1.3rc1
 * slf4j 1.4.2
 
-Generally I do not include binaries and libs in a repo.  But there is a reasonable chance some of these will not be readily available in the future.  So I included each components target build jars, the last four libs above, and some eclipse IDE artifacts to outline how the components depend on each other.
+Generally I do not include binaries and libs in a repo.  But there is a reasonable chance some of these will not be readily available in the future.  So I included each component's target build jars, the last four libs above, and some eclipse IDE artifacts to remind myself how the components depended on each other in the future.
 
 Project is currently retired.
