@@ -23,3 +23,10 @@ This project is dated and relies on some old libraries.
 * Java 6_06
 * Tomcat 6.0.16
 * yui 2.5.2
+* commons-lang-2.4
+* jabsorb 1.3rc1
+* slf4j 1.4.2
+
+Generally I do not include binaries and libs in a repo.  But there is a reasonable chance some of these will not be readily available in the future.  So I included each components target build jars, the last four libs above, and some eclipse IDE artifacts to outline how the components depend on each other.
+
+Project is currently retired.
