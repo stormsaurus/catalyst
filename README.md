@@ -21,4 +21,5 @@ This project is dated and relies on some old libraries.
 
 * MySQL 5.0.51b
 * Java 6_06
-* Tomcat 6.0.16 
+* Tomcat 6.0.16
+* yui 2.5.2
