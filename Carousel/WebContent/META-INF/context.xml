@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context>
+<!--
+  <Resource name="bean/ServiceFactory" auth="Container"
+            type="catalyst.carousel.ServiceFactory"
+            factory="org.apache.naming.factory.BeanFactory"/>
+-->
+  <Resource name="jdbc/CatDevDB" auth="Container" type="javax.sql.DataSource"
+               maxActive="100" maxIdle="30" maxWait="15000"
+               username="root" password="password" driverClassName="com.mysql.jdbc.Driver"
+               url="jdbc:mysql://localhost:3306/dev?autoReconnect=true"/>
+</Context>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp
+  spec="6.0+"
+  codebase="http://localhost:8080/"
+  href="watcher.jnlp">
+  <information>
+    <title>Watcher</title>
+    <vendor>Catalyst, Inc.</vendor>
+    <description>The watcher monitors chat and sends it to other exotic destinations you choose.</description>
+    <description kind="short">The watcher monitors chat and sends it to other exotic destinations you choose.</description>
+    <icon href="/images/icon32.png" kind="shortcut" />
+    <icon href="/images/icon64.png"/>
+    <icon href="/images/chiral.png" kind="splash" />
+    <offline-allowed/>
+    <shortcut online="true">
+      <desktop/>
+      <menu submenu="Catalyst"/>
+    </shortcut>
+  </information>
+  <security>
+      <all-permissions/>
+  </security>
+  <update check="always" policy="prompt-run" />
+  <resources>
+    <java version="1.6+" java-vm-args="-esa -Xnoclassgc"/>
+    <jar href="/lib/catalyst-watcher.jar"/>
+    <jar href="/lib/catalyst-watcher-resources.jar"/>
+    <jar href="/lib/commons-lang-2.4.jar"/>
+    <jar href="/lib/jabsorb-1.3rc1.jar"/>
+    <jar href="/lib/slf4j-api-1.4.2.jar"/>
+    <jar href="/lib/slf4j-jdk14-1.4.2.jar"/>
+  </resources>
+  <application-desc main-class="catalyst.watcher.App"/>
+</jnlp>

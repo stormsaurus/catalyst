@@ -1,0 +1,34 @@
+<project name="Website" default="dist" basedir=".">
+    <description>
+        Build libraries for website
+    </description>
+    <property name="src" location="src"/>
+    <property name="build" location="build"/>
+    <property name="dist"  location="dist"/>
+
+    <target name="init">
+        <tstamp/>
+    </target>
+
+    <target name="compile" depends="init" description="compile the source" >
+    </target>
+
+    <target name="dist" depends="compile" description="generate the distribution" >
+        <copy file="../WatcherResources/build/catalyst-watcher-resources.jar" tofile="./WebContent/lib/catalyst-watcher-resources.jar"/>
+        <copy file="../Watcher/build/catalyst-watcher.jar" tofile="./WebContent/lib/catalyst-watcher.jar"/>
+        <signjar jar="./WebContent/lib/catalyst-watcher.jar" alias="alias" storepass="password" keystore="C://Documents and Settings//default/catalyst"/>
+        <signjar jar="./WebContent/lib/catalyst-watcher-resources.jar" alias="alias" storepass="password" keystore="C://Documents and Settings//default/catalyst"/>
+    </target>
+
+    <target name="sign">
+        <signjar jar="./WebContent/lib/catalyst-watcher.jar" alias="alias" storepass="password" keystore="C://Documents and Settings//default/catalyst"/>
+        <signjar jar="./WebContent/lib/catalyst-watcher-resources.jar" alias="alias" storepass="password" keystore="C://Documents and Settings//default/catalyst"/>
+        <signjar jar="./WebContent/lib/jabsorb-1.3rc1.jar" alias="alias" storepass="password" keystore="C://Documents and Settings//default/catalyst"/>
+        <signjar jar="./WebContent/lib/commons-lang-2.4.jar" alias="alias" storepass="password" keystore="C://Documents and Settings//default/catalyst"/>
+        <signjar jar="./WebContent/lib/slf4j-api-1.4.2.jar" alias="alias" storepass="password" keystore="C://Documents and Settings//default/catalyst"/>
+        <signjar jar="./WebContent/lib/slf4j-jdk14-1.4.2.jar" alias="alias" storepass="password" keystore="C://Documents and Settings//default/catalyst"/>
+    </target>
+
+    <target name="clean" description="clean up" >
+    </target>
+</project>

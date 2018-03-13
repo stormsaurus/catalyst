@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+    <classpathentry kind="src" path="src"/>
+    <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+    <classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Apache Commons"/>
+    <classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Jabsorb"/>
+    <classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Java Web Start"/>
+    <classpathentry kind="lib" path="/Carousel/build/catalyst-carousel-client.jar"/>
+    <classpathentry kind="lib" path="/WatcherResources/build/catalyst-watcher-resources.jar"/>
+    <classpathentry kind="output" path="bin"/>
+</classpath>

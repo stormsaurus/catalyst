@@ -1,0 +1,30 @@
+<project name="Carousel" default="enhance" basedir=".">
+    <description>
+        Enhance OpenJPA files
+    </description>
+    <property name="src" location="src"/>
+    <property name="build" location="build/classes"/>
+    <property name="dist" location="dist"/>
+
+  <target name="init">
+    <tstamp/>
+  </target>
+
+  <target name="compile" depends="init" description="compile the source" >
+  </target>
+
+    <target name="enhance">
+        <!-- define the openjpac task; this can be done at the top of the    -->
+        <!-- build.xml file, so it will be available for all targets      -->
+        <taskdef name="openjpac" classpath="${src}" classname="org.apache.openjpa.ant.PCEnhancerTask"/>
+
+        <!-- invoke enhancer on all .java files -->
+        <openjpac>
+            <classpath path="${src}" />
+            <config     propertiesFile="${src}/META-INF/persistence.xml"/>
+        </openjpac>
+    </target>
+
+  <target name="clean" description="clean up" >
+  </target>
+</project>
