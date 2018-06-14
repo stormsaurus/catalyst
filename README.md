@@ -29,4 +29,4 @@ This project was experimental and not particularly well written to quickly explo
 
 Generally I do not include binaries and libs in a repo.  But there is a reasonable chance some of these will not be readily available in the future.  So I included each component's target build jars, the last four libs above, and some eclipse IDE artifacts to remind myself how the components depended on each other in the future.
 
-Project is currently retired.
+Project is currently retired.  Possibly circa 2008.
